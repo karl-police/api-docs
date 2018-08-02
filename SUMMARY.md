@@ -30,4 +30,3 @@
 * [Tipping](endpoints/tipping.md)
 * [Uploads](endpoints/uploads.md)
 * [Users](endpoints/users.md)
-

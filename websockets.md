@@ -65,12 +65,11 @@ function onEvent(event) {
 | session:reset | Sent when a session is reset |
 
 {% tabs %}
-{% tab title="Songrequest" %}
+  {% tab title="Songrequest" %}
 
-{% endtab %}
+  {% endtab %}
 
-{% tab title="Second Tab" %}
+  {% tab title="Second Tab" %}
 
-{% endtab %}
+  {% endtab %}
 {% endtabs %}
-

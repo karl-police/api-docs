@@ -1,44 +1,44 @@
 # Sessions
 
 {% api-method method="get" host="https://api.streamelements.com" path="/kappa/v2/sessions/:channel" %}
-{% api-method-summary %}
-Get session
-{% endapi-method-summary %}
+  {% api-method-summary %}
+    Get session
+  {% endapi-method-summary %}
 
-{% api-method-description %}
-This endpoint allows you to get the active stream session.
-{% endapi-method-description %}
+  {% api-method-description %}
+    This endpoint allows you to get the active stream session.
+  {% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="channel" type="string" required=true %}
-The channelId
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+  {% api-method-spec %}
+    {% api-method-request %}
+      {% api-method-path-parameters %}
+        {% api-method-parameter name="channel" type="string" required=true %}
+          The channelId
+        {% endapi-method-parameter %}
+      {% endapi-method-path-parameters %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-The Bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+      {% api-method-headers %}
+        {% api-method-parameter name="Authorization" type="string" required=true %}
+          The Bearer token
+        {% endapi-method-parameter %}
+      {% endapi-method-headers %}
+    {% endapi-method-request %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Session successfully retrieved.
-{% endapi-method-response-example-description %}
+    {% api-method-response %}
+      {% api-method-response-example httpCode=200 %}
+        {% api-method-response-example-description %}
+          Session successfully retrieved.
+        {% endapi-method-response-example-description %}
 
-```javascript
-{
-    "_id": "5af42bb472b82a8690e3423b",
-    "provider": "twitch",
-    "lastReset": "2018-05-10T11:23:32.891Z",
-    "channel": "577c0455f9a31ea72a36b2b3",
-    "createdAt": "2018-05-10T11:23:32.914Z",
-    "updatedAt": "2018-05-10T11:24:04.128Z",
-    "data": {
+        ```javascript
+        {
+        "_id": "5af42bb472b82a8690e3423b",
+        "provider": "twitch",
+        "lastReset": "2018-05-10T11:23:32.891Z",
+        "channel": "577c0455f9a31ea72a36b2b3",
+        "createdAt": "2018-05-10T11:23:32.914Z",
+        "updatedAt": "2018-05-10T11:24:04.128Z",
+        "data": {
         "follower-latest": {
             "name": "xd"
         },
@@ -216,120 +216,119 @@ Session successfully retrieved.
                 "createdAt": "2018-05-09T14:13:59.191Z"
             }
         ]
-    }
-}
-```
-{% endapi-method-response-example %}
+        }
+        }
+        ```
+      {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
+      {% api-method-response-example httpCode=401 %}
+        {% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
+        {% endapi-method-response-example-description %}
 
-```javascript
-    "statusCode": 401,
-    "error": "Unauthorized",
-    "message": "No authorization token was found"
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
+        ```javascript
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "No authorization token was found"
+        }
+        ```
+      {% endapi-method-response-example %}
+    {% endapi-method-response %}
+  {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="put" host="https://api.streamelements.com" path="/kappa/v2/sessions/:channel" %}
-{% api-method-summary %}
-Update a session
-{% endapi-method-summary %}
+  {% api-method-summary %}
+    Update a session
+  {% endapi-method-summary %}
 
-{% api-method-description %}
+  {% api-method-description %}
 
-{% endapi-method-description %}
+  {% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+  {% api-method-spec %}
+    {% api-method-request %}
+      {% api-method-path-parameters %}
+        {% api-method-parameter name="" type="string" required=false %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+        {% endapi-method-parameter %}
+      {% endapi-method-path-parameters %}
+    {% endapi-method-request %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+    {% api-method-response %}
+      {% api-method-response-example httpCode=200 %}
+        {% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
+        {% endapi-method-response-example-description %}
 
-```
+        ```
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
+        ```
+      {% endapi-method-response-example %}
+    {% endapi-method-response %}
+  {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="put" host="https://api.streamelements.com" path="/kappa/v2/sessions/:channel" %}
-{% api-method-summary %}
-Reset a session
-{% endapi-method-summary %}
+  {% api-method-summary %}
+    Reset a session
+  {% endapi-method-summary %}
 
-{% api-method-description %}
-Resetting a session will create a brand new session.  
-{% endapi-method-description %}
+  {% api-method-description %}
+    Resetting a session will create a brand new session.  
+  {% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+  {% api-method-spec %}
+    {% api-method-request %}
+      {% api-method-path-parameters %}
+        {% api-method-parameter name="" type="string" required=false %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+        {% endapi-method-parameter %}
+      {% endapi-method-path-parameters %}
+    {% endapi-method-request %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+    {% api-method-response %}
+      {% api-method-response-example httpCode=200 %}
+        {% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
+        {% endapi-method-response-example-description %}
 
-```
+        ```
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
+        ```
+      {% endapi-method-response-example %}
+    {% endapi-method-response %}
+  {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="put" host="https://api.streamelements.com" path="/kappa/v2/sessions/:channel/reload" %}
-{% api-method-summary %}
-Refresh session aggregates
-{% endapi-method-summary %}
+  {% api-method-summary %}
+    Refresh session aggregates
+  {% endapi-method-summary %}
 
-{% api-method-description %}
+  {% api-method-description %}
 
-{% endapi-method-description %}
+  {% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+  {% api-method-spec %}
+    {% api-method-request %}
+      {% api-method-path-parameters %}
+        {% api-method-parameter name="" type="string" required=false %}
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+        {% endapi-method-parameter %}
+      {% endapi-method-path-parameters %}
+    {% endapi-method-request %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+    {% api-method-response %}
+      {% api-method-response-example httpCode=200 %}
+        {% api-method-response-example-description %}
 
-{% endapi-method-response-example-description %}
+        {% endapi-method-response-example-description %}
 
-```
+        ```
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
+        ```
+      {% endapi-method-response-example %}
+    {% endapi-method-response %}
+  {% endapi-method-spec %}
 {% endapi-method %}
-
