@@ -17,4 +17,3 @@ When you make an API request, you will receive a set of rate-limiting headers to
 `x-ratelimit-remaining` The number of requests you have left for the current time interval.
 
 `x-ratelimit-reset` A Unix epoch timestamp of when your rate-limit window will reset.
-
